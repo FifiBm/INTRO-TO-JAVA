@@ -1,5 +1,5 @@
 function favAnimals(){
-    console.log (dogs , cats);
+    console.log ("dogs , cats");
 }
 
 let result = favAnimals();
@@ -38,7 +38,7 @@ console.log(calculation("add"));
 const scopeTest = ()=>{
     var weather ="sunny";
 }
-console.log(weather)
+// console.log("weather")
 
 let counter = 0;
 
@@ -63,13 +63,13 @@ console.log(canDrive(50))
 
 
 const rockPaperScissors = (move) =>{
-    if(rock){
+    if(move === "rock"){
         console.log("player has chosen rock");
     }
-    else if(paper){
+    else if(move ==="paper"){
         console.log("player has chosen paper"); 
     }
-    else if(scissors){
+    else if(move ==="scissors"){
         console.log("player has chosen scissors");
     }
     else {
@@ -82,12 +82,15 @@ console.log(rockPaperScissors("rock"));
 let mentalHealth = "good today";
 let motivation = "strong";
 if(mentalHealth === "bad" && motivation === "low") {
-    return "selfcare"
+    console.log ("selfcare")
 } else if(mentalHealth === "good today" && motivation === "low"){
-    return "take meds"
+    console.log ("take meds")
 } else if(mentalHealth === "good today" && motivation === "strong"){
-    return "go kill it"
-} else { "stay in bed"}
+    console.log ("go kill it")
+
+} else {console.log ("stay in bed")
+}
+
 
 const  selectShirtSize = (size) => {
     if (size >= 20 && size < 30 ) {
@@ -97,9 +100,53 @@ const  selectShirtSize = (size) => {
     } else if(size >= 40 && size < 50){
         return "you should select a size L"
     } else{
-        "out of stock, select a new shirt"
+       return "out of stock, select a new shirt"
     }
 }
 
+console.log (selectShirtSize(50));
+console.log(selectShirtSize(40));
+console.log(selectShirtSize(30));
 
 
+const groceryPicker = (liquid, fruit) => {
+    if (liquid === "juice" || fruit === "bananas"){
+        return "nice you have a snack"
+    } else {
+        return "go grocery shopping"
+    }
+}
+console.log(groceryPicker("juice", "bananas")); // => go grocery shopping
+console.log(groceryPicker("juice", "bananas")); // => nice you have a snack
+
+const checkWeather = (weather, temp) =>{
+    if( weather === "sunny" && "warm"){
+        return "go out"
+    }else if( weather === "sunny" && "cold"){
+        return "get a hot drink"
+    }else if (weather === "cloudy" && "warm"){
+        return "take a walk"
+    }else if (weather === "cloudy" && "cold"){
+        return "stay in"
+    }else {
+        return "checkWeather and do the right thing"
+    }
+
+}
+console.log (checkWeather("sunny", "warm"))// go out
+console.log (checkWeather("sunny", "cold"))// get a hot drink
+console.log (checkWeather("cloudy", "warm"))// take a walk
+console.log (checkWeather("cloud", "cold"))// stay in
+
+const tripPlanner = (airplanePrice, covidVaxStatus) => {
+    if(airplanePrice < 100 || covidVaxStatus === "vaccinated"){
+        return "go visit family"
+    }else if(airplanePrice >= 100 || covidVaxStatus !== "vaccinated"){
+        return "stay home"
+    }else{
+        return "wait and see"
+    }
+}
+console.log (tripPlanner(70, "vaccinated"))// go visit family
+console.log (tripPlanner(100, "unvaccinated"))// stay home
+console.log (tripPlanner("3000", "has covid"))// wait and see
