@@ -150,3 +150,48 @@ const tripPlanner = (airplanePrice, covidVaxStatus) => {
 console.log (tripPlanner(70, "vaccinated"))// go visit family
 console.log (tripPlanner(100, "unvaccinated"))// stay home
 console.log (tripPlanner("3000", "has covid"))// wait and see
+
+let animals = ("dog","cat", "bird", )
+
+/****************** 01/18/2022 *******************/
+
+/* arrays 
+   arrays with conditionals for review
+   loops
+   loops with functions
+*/
+
+// create an array of numbers of size 10 and then print out the second element
+// reassign the element at the seventh index to a string "reassigned"
+// print another element to the end and print out the array again
+
+// note if stuck - google how to get length of an array javascript
+
+// challenge
+// creat a function called getLength that takes in an array as a paran you can call it
+// array and returns the inputed arrays length
+
+const getLength = (array) => {//array = [1,2,3,4,5]
+    return array.length;
+}
+console.log['invoked getLength function', getLength([1,2,3,4,5])];
+
+//unshift for adding to the front of the array
+numbersArray.unshift['added to front']
+console.log{'used unshift to add to the front', numbersArray}
+
+//shift for removing ele from the front of the array
+numbersArray.shift();
+console.log('usimg shift to remove first ele', numbersArray)
+
+// console.log(numbersArray.pop{});
+//slice
+
+let arrayOfChars = ['a','','f','o','o','l','g'];
+let sliceOfArray = arrayOfChars.slice(2,6);
+console.log('slicing a portion of the array from before index 2, to before index 6:',slice)
+
+let phrases = ['yo','hello','fox','jumps','over','the moon','legs','birds'];
+// create new variable of sliced portion of phrases that is just
+// ['fox', 'jump', 'over', 'the moon']
+// note if you gte stuck go search array slice method javascript MDN
